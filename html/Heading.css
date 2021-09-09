@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header:hover{
+    background: rgba(255, 255, 255, 1);
+}
+header .navbar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .navbar .logo{
+    flex: 1;
+    padding: 0 50px;
+    text-align: end;
+}
+header .navbar .content{
+    flex: 2;
+}
+header .navbar .content ul{
+    display: flex;
+    position: relative;
+}
+header .navbar .content ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header .navbar .content ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+}
+header .navbar .content ul li:hover .form{
+    visibility: visible;
+}
+header .navbar .content ul li .form li:hover{
+    background-color: aqua;
+}
+header .navbar .content .form {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.644);
+    background: rgb(241, 239, 239);
+    visibility: hidden;
+    transition: 0.1s;
+}
+header .navbar .content .form li{
+    margin: 0;
+    padding: 10px 10px;
+}
+header .navbar .others{
+    flex: 1;
+    display: flex;
+}
+header .navbar .others .others-search{
+    border-bottom: 1px solid #333;
+    opacity: 0.7;
+}
+header .navbar .others .others-search input{
+    outline: none;
+    border: none;
+    background: white;
+}
+header .navbar .others i {
+    margin-left: 20px;
+    border-right: 2px solid #000;
+    padding-right: 12px;
+}
+header .navbar .others i:last-child{
+    border: none;
+}
+header .navbar .others .others-search{
+    border-right: 2px solid #000;
+}
